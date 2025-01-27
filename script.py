@@ -2,12 +2,11 @@ from openai import OpenAI
 from spotipy.oauth2 import SpotifyOAuth
 from spotipy import Spotify
 
-client = OpenAI(
-)
+client = OpenAI(api_key="<INSERT KEY HERE>")
 
-client_id = ""
-client_secret = ""
-redirect_uri = ""
+client_id = "<INSERT KEY HERE>"
+client_secret = "<INSERT KEY HERE>"
+redirect_uri = "<INSERT URL HERE>"
 scope = "user-read-recently-played playlist-read-private"
 
 sp_oauth = SpotifyOAuth(
